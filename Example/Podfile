@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'UIImageViewWithWords_Example', :exclusive => true do
+  pod 'UIImageViewWithWords', :path => '../'
+end
+
+target 'UIImageViewWithWords_Tests', :exclusive => true do
+  pod 'UIImageViewWithWords', :path => '../'
+
+  
+end
