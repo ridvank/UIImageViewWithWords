@@ -1,0 +1,6 @@
+framework module UIImageViewWithWords {
+  umbrella header "UIImageViewWithWords-umbrella.h"
+
+  export *
+  module * { export * }
+}

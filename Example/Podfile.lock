@@ -1,0 +1,14 @@
+PODS:
+  - UIImageViewWithWords (0.1.0)
+
+DEPENDENCIES:
+  - UIImageViewWithWords (from `../`)
+
+EXTERNAL SOURCES:
+  UIImageViewWithWords:
+    :path: ../
+
+SPEC CHECKSUMS:
+  UIImageViewWithWords: 5bf7c69d553151502fcaeac1a2b112ae422043a9
+
+COCOAPODS: 0.39.0

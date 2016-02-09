@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		079A9531D477F08AF1F91E4F4112489C /* UIImageViewWithWords.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2FB06107608EB957B4A2FDA7E05DC703 /* UIImageViewWithWords.bundle */; };
+		344220D8278482E4AE7445EA859DC69F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		39A1BD5772A0094A81A1EAC22E79D4FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		86FA8D8075BB71AC6AF5D6FA66862876 /* Pods-UIImageViewWithWords_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1AF87704A423359395219BF3E9D6274 /* Pods-UIImageViewWithWords_Example-dummy.m */; };
+		9E176BA21773FAFBA2D0766614D682E0 /* UIImageViewWithWords-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AA79A95499B25E301DF80591B593B86 /* UIImageViewWithWords-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB23646A1AA0F800AB0884148C5CCCAE /* Pods-UIImageViewWithWords_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 091FD31C58FBFC4E9609CC6A6F661D68 /* Pods-UIImageViewWithWords_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADEE5F473FEB7F9CF60B69E0AED394A1 /* Pods-UIImageViewWithWords_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9CC22708D8A08550B9B6FB73B5447B3 /* Pods-UIImageViewWithWords_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD86CAD5599F0B4A7D48A79708B0C070 /* UIImageView+Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD8345C1542529947E89CA18B35C0FD /* UIImageView+Words.swift */; };
+		C283829AC45620DFEF64B9040E27BABA /* UIImageViewWithWords-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F249301A0E7FF59C369BA1F6B5B4157F /* UIImageViewWithWords-dummy.m */; };
+		C772EB13F08F3B9712374886E02AD7A8 /* Pods-UIImageViewWithWords_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D7C60513F28468E733D1F92253A874 /* Pods-UIImageViewWithWords_Tests-dummy.m */; };
+		CE6DAD19E1FC9A5995F5CE9E5A6B557A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6EDA5DFC9B6386AE448DD48832837C74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 883C5BA8C0FA8FF9B72CD9660B8356A5;
+			remoteInfo = "UIImageViewWithWords-UIImageViewWithWords";
+		};
+		AB9FEE2DD22B8684277199F81DECE849 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F9623393D62EF731469EC7483EF8E21;
+			remoteInfo = UIImageViewWithWords;
+		};
+		D191B661349B433E3348B5EB1D6FD32E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F9623393D62EF731469EC7483EF8E21;
+			remoteInfo = UIImageViewWithWords;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		091FD31C58FBFC4E9609CC6A6F661D68 /* Pods-UIImageViewWithWords_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UIImageViewWithWords_Tests-umbrella.h"; sourceTree = "<group>"; };
+		0D36BED8696B508DDB29565ED5887BFD /* Pods-UIImageViewWithWords_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIImageViewWithWords_Example.release.xcconfig"; sourceTree = "<group>"; };
+		19457CFA7FD1D49484532B2D963193DE /* Pods-UIImageViewWithWords_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIImageViewWithWords_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		207BF064A05865A3DBB9F249B6C1050A /* Pods-UIImageViewWithWords_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-UIImageViewWithWords_Example.modulemap"; sourceTree = "<group>"; };
+		2CB680ACA1C4491D49FFACE2BB8491F1 /* Pods-UIImageViewWithWords_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UIImageViewWithWords_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2FB06107608EB957B4A2FDA7E05DC703 /* UIImageViewWithWords.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIImageViewWithWords.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		35261CF194B51EC2099E3762CE342EAF /* Pods-UIImageViewWithWords_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UIImageViewWithWords_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3AA79A95499B25E301DF80591B593B86 /* UIImageViewWithWords-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImageViewWithWords-umbrella.h"; sourceTree = "<group>"; };
+		3AF20E4E397384CE5D88487BC8A1B0D4 /* Pods_UIImageViewWithWords_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIImageViewWithWords_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B70E7EB468A03975075F3FAAD07B774 /* UIImageViewWithWords.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIImageViewWithWords.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		42CC6C30FC9A2041D1907157012AA0C7 /* UIImageViewWithWords-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImageViewWithWords-prefix.pch"; sourceTree = "<group>"; };
+		67286B8B0A420FE2FB8FBA08C7186A44 /* Pods-UIImageViewWithWords_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-UIImageViewWithWords_Tests.modulemap"; sourceTree = "<group>"; };
+		6A7FC1BF96A73446D4014E81950DD7BC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B23B6EE8011C1EF69F51A2135561931 /* Pods-UIImageViewWithWords_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UIImageViewWithWords_Tests-resources.sh"; sourceTree = "<group>"; };
+		7CD8345C1542529947E89CA18B35C0FD /* UIImageView+Words.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImageView+Words.swift"; sourceTree = "<group>"; };
+		825615EF961F44740B595F701E9B4BC7 /* UIImageViewWithWords.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UIImageViewWithWords.modulemap; sourceTree = "<group>"; };
+		A1AF87704A423359395219BF3E9D6274 /* Pods-UIImageViewWithWords_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UIImageViewWithWords_Example-dummy.m"; sourceTree = "<group>"; };
+		A203234EFB69AAE97CBDC732F1FCF568 /* Pods-UIImageViewWithWords_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UIImageViewWithWords_Example-frameworks.sh"; sourceTree = "<group>"; };
+		A29DF0F8A32BBE99C9C641FA06FE77B1 /* Pods-UIImageViewWithWords_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UIImageViewWithWords_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		B0D7C60513F28468E733D1F92253A874 /* Pods-UIImageViewWithWords_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UIImageViewWithWords_Tests-dummy.m"; sourceTree = "<group>"; };
+		B7A990CFFA3C29B21DA0328E478E1600 /* Pods-UIImageViewWithWords_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UIImageViewWithWords_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C5C4FF1F2BCDEDA6DBB06033B4C18415 /* Pods-UIImageViewWithWords_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UIImageViewWithWords_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CA54F5FB8B16219BB6C65DBC629D5919 /* Pods-UIImageViewWithWords_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIImageViewWithWords_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		CF8C6535FE37B19F9FFA7A3A292C286B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5DFEA6FF5C348C5184EE73544DDD93D /* Pods-UIImageViewWithWords_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIImageViewWithWords_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7E410FF54EFBDF77C5FF247C980F51B /* Pods_UIImageViewWithWords_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIImageViewWithWords_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9CC22708D8A08550B9B6FB73B5447B3 /* Pods-UIImageViewWithWords_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UIImageViewWithWords_Example-umbrella.h"; sourceTree = "<group>"; };
+		DEEC3B487AB4FFA662DA95D3471FE23D /* UIImageViewWithWords.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIImageViewWithWords.xcconfig; sourceTree = "<group>"; };
+		E735068A3E4F8EF2794F2867062B0DC0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F249301A0E7FF59C369BA1F6B5B4157F /* UIImageViewWithWords-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImageViewWithWords-dummy.m"; sourceTree = "<group>"; };
+		FFBE178391AE2665E2DFD288CAF97567 /* Pods-UIImageViewWithWords_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UIImageViewWithWords_Example-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C87AEC54CDB4C785CE7749B3ADB22B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE6DAD19E1FC9A5995F5CE9E5A6B557A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8621327BA178FD89F36E067F7B3B8F88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344220D8278482E4AE7445EA859DC69F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B277789C97676A8ADA3F67EA117D51CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39A1BD5772A0094A81A1EAC22E79D4FB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFFFF84353D52539E8349C1C3BD6D5A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		136E4F136A5F355E913001484486057A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7770C4EED653E626364C32E6F553DA7 /* UIImageViewWithWords */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		6C4F1EF3508C8A5BB22B6A6B0DC70FFB /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F79CE490093D613D5A0E4089716EE511 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		75EF5074D0D6D98CCBFCEBB56DD6B05E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF8C6535FE37B19F9FFA7A3A292C286B /* Info.plist */,
+				825615EF961F44740B595F701E9B4BC7 /* UIImageViewWithWords.modulemap */,
+				DEEC3B487AB4FFA662DA95D3471FE23D /* UIImageViewWithWords.xcconfig */,
+				F249301A0E7FF59C369BA1F6B5B4157F /* UIImageViewWithWords-dummy.m */,
+				42CC6C30FC9A2041D1907157012AA0C7 /* UIImageViewWithWords-prefix.pch */,
+				3AA79A95499B25E301DF80591B593B86 /* UIImageViewWithWords-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/UIImageViewWithWords";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				136E4F136A5F355E913001484486057A /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				88E33143F4AAE623701B36BD4F8CF3F3 /* Products */,
+				C62796C0069E2B7C253928EC547CABE4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		88E33143F4AAE623701B36BD4F8CF3F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7E410FF54EFBDF77C5FF247C980F51B /* Pods_UIImageViewWithWords_Example.framework */,
+				3AF20E4E397384CE5D88487BC8A1B0D4 /* Pods_UIImageViewWithWords_Tests.framework */,
+				2FB06107608EB957B4A2FDA7E05DC703 /* UIImageViewWithWords.bundle */,
+				3B70E7EB468A03975075F3FAAD07B774 /* UIImageViewWithWords.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92270243676D5CFC2593093D8A7016E7 /* Pods-UIImageViewWithWords_Example */ = {
+			isa = PBXGroup;
+			children = (
+				E735068A3E4F8EF2794F2867062B0DC0 /* Info.plist */,
+				207BF064A05865A3DBB9F249B6C1050A /* Pods-UIImageViewWithWords_Example.modulemap */,
+				C5C4FF1F2BCDEDA6DBB06033B4C18415 /* Pods-UIImageViewWithWords_Example-acknowledgements.markdown */,
+				A29DF0F8A32BBE99C9C641FA06FE77B1 /* Pods-UIImageViewWithWords_Example-acknowledgements.plist */,
+				A1AF87704A423359395219BF3E9D6274 /* Pods-UIImageViewWithWords_Example-dummy.m */,
+				A203234EFB69AAE97CBDC732F1FCF568 /* Pods-UIImageViewWithWords_Example-frameworks.sh */,
+				FFBE178391AE2665E2DFD288CAF97567 /* Pods-UIImageViewWithWords_Example-resources.sh */,
+				D9CC22708D8A08550B9B6FB73B5447B3 /* Pods-UIImageViewWithWords_Example-umbrella.h */,
+				19457CFA7FD1D49484532B2D963193DE /* Pods-UIImageViewWithWords_Example.debug.xcconfig */,
+				0D36BED8696B508DDB29565ED5887BFD /* Pods-UIImageViewWithWords_Example.release.xcconfig */,
+			);
+			name = "Pods-UIImageViewWithWords_Example";
+			path = "Target Support Files/Pods-UIImageViewWithWords_Example";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C62796C0069E2B7C253928EC547CABE4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				92270243676D5CFC2593093D8A7016E7 /* Pods-UIImageViewWithWords_Example */,
+				F783F3487934E38622D25583291F8CDA /* Pods-UIImageViewWithWords_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C7770C4EED653E626364C32E6F553DA7 /* UIImageViewWithWords */ = {
+			isa = PBXGroup;
+			children = (
+				6C4F1EF3508C8A5BB22B6A6B0DC70FFB /* Pod */,
+				75EF5074D0D6D98CCBFCEBB56DD6B05E /* Support Files */,
+			);
+			name = UIImageViewWithWords;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		F783F3487934E38622D25583291F8CDA /* Pods-UIImageViewWithWords_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6A7FC1BF96A73446D4014E81950DD7BC /* Info.plist */,
+				67286B8B0A420FE2FB8FBA08C7186A44 /* Pods-UIImageViewWithWords_Tests.modulemap */,
+				35261CF194B51EC2099E3762CE342EAF /* Pods-UIImageViewWithWords_Tests-acknowledgements.markdown */,
+				2CB680ACA1C4491D49FFACE2BB8491F1 /* Pods-UIImageViewWithWords_Tests-acknowledgements.plist */,
+				B0D7C60513F28468E733D1F92253A874 /* Pods-UIImageViewWithWords_Tests-dummy.m */,
+				B7A990CFFA3C29B21DA0328E478E1600 /* Pods-UIImageViewWithWords_Tests-frameworks.sh */,
+				7B23B6EE8011C1EF69F51A2135561931 /* Pods-UIImageViewWithWords_Tests-resources.sh */,
+				091FD31C58FBFC4E9609CC6A6F661D68 /* Pods-UIImageViewWithWords_Tests-umbrella.h */,
+				D5DFEA6FF5C348C5184EE73544DDD93D /* Pods-UIImageViewWithWords_Tests.debug.xcconfig */,
+				CA54F5FB8B16219BB6C65DBC629D5919 /* Pods-UIImageViewWithWords_Tests.release.xcconfig */,
+			);
+			name = "Pods-UIImageViewWithWords_Tests";
+			path = "Target Support Files/Pods-UIImageViewWithWords_Tests";
+			sourceTree = "<group>";
+		};
+		F79CE490093D613D5A0E4089716EE511 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7CD8345C1542529947E89CA18B35C0FD /* UIImageView+Words.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4D2E23C02EE52335D0FCF1CEE13F8627 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB23646A1AA0F800AB0884148C5CCCAE /* Pods-UIImageViewWithWords_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C1B871D285405EA773ABA09C8A2D32 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E176BA21773FAFBA2D0766614D682E0 /* UIImageViewWithWords-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E886063DE8A262B4B1D54E063FBD7362 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADEE5F473FEB7F9CF60B69E0AED394A1 /* Pods-UIImageViewWithWords_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1F9623393D62EF731469EC7483EF8E21 /* UIImageViewWithWords */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41BBD6963544BDB9BA2D99AE5CF00A79 /* Build configuration list for PBXNativeTarget "UIImageViewWithWords" */;
+			buildPhases = (
+				B274AA02F55E21C121E1610C74EA4A51 /* Sources */,
+				8621327BA178FD89F36E067F7B3B8F88 /* Frameworks */,
+				ED8E57B6BAD529D14B211D7C1DAB0477 /* Resources */,
+				85C1B871D285405EA773ABA09C8A2D32 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A477B4A565090C179D15E259E19138A4 /* PBXTargetDependency */,
+			);
+			name = UIImageViewWithWords;
+			productName = UIImageViewWithWords;
+			productReference = 3B70E7EB468A03975075F3FAAD07B774 /* UIImageViewWithWords.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		883C5BA8C0FA8FF9B72CD9660B8356A5 /* UIImageViewWithWords-UIImageViewWithWords */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89B073B55C46C8E4F7429788B50AC2C0 /* Build configuration list for PBXNativeTarget "UIImageViewWithWords-UIImageViewWithWords" */;
+			buildPhases = (
+				A387A47BA9B90F4236DABF0F19DDAC78 /* Sources */,
+				EFFFF84353D52539E8349C1C3BD6D5A5 /* Frameworks */,
+				A550EAAED8DBB644238668EF732C114B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UIImageViewWithWords-UIImageViewWithWords";
+			productName = "UIImageViewWithWords-UIImageViewWithWords";
+			productReference = 2FB06107608EB957B4A2FDA7E05DC703 /* UIImageViewWithWords.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		AFF56D0C327E2B598E5B1E0DE3834616 /* Pods-UIImageViewWithWords_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF1D9C87E71BAE35F8FC51D6F3B4544E /* Build configuration list for PBXNativeTarget "Pods-UIImageViewWithWords_Tests" */;
+			buildPhases = (
+				709E1733C83A7CB25ACE964DBD86AA21 /* Sources */,
+				B277789C97676A8ADA3F67EA117D51CD /* Frameworks */,
+				4D2E23C02EE52335D0FCF1CEE13F8627 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAF85EB6895EF21A6E9FD9E1AF779E9E /* PBXTargetDependency */,
+			);
+			name = "Pods-UIImageViewWithWords_Tests";
+			productName = "Pods-UIImageViewWithWords_Tests";
+			productReference = 3AF20E4E397384CE5D88487BC8A1B0D4 /* Pods_UIImageViewWithWords_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E74886DFD693C0102AC2BF1411C15494 /* Pods-UIImageViewWithWords_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E1A6956AC2FA10B0480F6290EF64B9E /* Build configuration list for PBXNativeTarget "Pods-UIImageViewWithWords_Example" */;
+			buildPhases = (
+				268AFDB845F014108EB15E10A91D1A50 /* Sources */,
+				1C87AEC54CDB4C785CE7749B3ADB22B5 /* Frameworks */,
+				E886063DE8A262B4B1D54E063FBD7362 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBB53E353A8843C4979AA4E4812345DE /* PBXTargetDependency */,
+			);
+			name = "Pods-UIImageViewWithWords_Example";
+			productName = "Pods-UIImageViewWithWords_Example";
+			productReference = D7E410FF54EFBDF77C5FF247C980F51B /* Pods_UIImageViewWithWords_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 88E33143F4AAE623701B36BD4F8CF3F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E74886DFD693C0102AC2BF1411C15494 /* Pods-UIImageViewWithWords_Example */,
+				AFF56D0C327E2B598E5B1E0DE3834616 /* Pods-UIImageViewWithWords_Tests */,
+				1F9623393D62EF731469EC7483EF8E21 /* UIImageViewWithWords */,
+				883C5BA8C0FA8FF9B72CD9660B8356A5 /* UIImageViewWithWords-UIImageViewWithWords */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A550EAAED8DBB644238668EF732C114B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED8E57B6BAD529D14B211D7C1DAB0477 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				079A9531D477F08AF1F91E4F4112489C /* UIImageViewWithWords.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		268AFDB845F014108EB15E10A91D1A50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86FA8D8075BB71AC6AF5D6FA66862876 /* Pods-UIImageViewWithWords_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		709E1733C83A7CB25ACE964DBD86AA21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C772EB13F08F3B9712374886E02AD7A8 /* Pods-UIImageViewWithWords_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A387A47BA9B90F4236DABF0F19DDAC78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B274AA02F55E21C121E1610C74EA4A51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD86CAD5599F0B4A7D48A79708B0C070 /* UIImageView+Words.swift in Sources */,
+				C283829AC45620DFEF64B9040E27BABA /* UIImageViewWithWords-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A477B4A565090C179D15E259E19138A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIImageViewWithWords-UIImageViewWithWords";
+			target = 883C5BA8C0FA8FF9B72CD9660B8356A5 /* UIImageViewWithWords-UIImageViewWithWords */;
+			targetProxy = 6EDA5DFC9B6386AE448DD48832837C74 /* PBXContainerItemProxy */;
+		};
+		CBB53E353A8843C4979AA4E4812345DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIImageViewWithWords;
+			target = 1F9623393D62EF731469EC7483EF8E21 /* UIImageViewWithWords */;
+			targetProxy = D191B661349B433E3348B5EB1D6FD32E /* PBXContainerItemProxy */;
+		};
+		DAF85EB6895EF21A6E9FD9E1AF779E9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIImageViewWithWords;
+			target = 1F9623393D62EF731469EC7483EF8E21 /* UIImageViewWithWords */;
+			targetProxy = AB9FEE2DD22B8684277199F81DECE849 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		273D2187F6471CEC7A627121BD904F29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5DFEA6FF5C348C5184EE73544DDD93D /* Pods-UIImageViewWithWords_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-UIImageViewWithWords_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UIImageViewWithWords_Tests/Pods-UIImageViewWithWords_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_UIImageViewWithWords_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2A7AB94E801074475CF6BF3E994F83D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEEC3B487AB4FFA662DA95D3471FE23D /* UIImageViewWithWords.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = UIImageViewWithWords;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		2B753E757850C36F6301F7B0F3DDFFEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEEC3B487AB4FFA662DA95D3471FE23D /* UIImageViewWithWords.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = UIImageViewWithWords;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		460A5F1868056285A7D726AB01ADD1A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEEC3B487AB4FFA662DA95D3471FE23D /* UIImageViewWithWords.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIImageViewWithWords/UIImageViewWithWords-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIImageViewWithWords/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIImageViewWithWords/UIImageViewWithWords.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UIImageViewWithWords;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		628C6185AFA175E4320AB9AFEC6EB8E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA54F5FB8B16219BB6C65DBC629D5919 /* Pods-UIImageViewWithWords_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-UIImageViewWithWords_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UIImageViewWithWords_Tests/Pods-UIImageViewWithWords_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_UIImageViewWithWords_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		636C9ED02450940093BC57AFFD1A8AB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19457CFA7FD1D49484532B2D963193DE /* Pods-UIImageViewWithWords_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-UIImageViewWithWords_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UIImageViewWithWords_Example/Pods-UIImageViewWithWords_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_UIImageViewWithWords_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		97AFCF0FF45BF1A8C4DBFC97D8BBEB89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEEC3B487AB4FFA662DA95D3471FE23D /* UIImageViewWithWords.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIImageViewWithWords/UIImageViewWithWords-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIImageViewWithWords/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIImageViewWithWords/UIImageViewWithWords.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UIImageViewWithWords;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AE00A8126E3AC2392834CD440330537A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D36BED8696B508DDB29565ED5887BFD /* Pods-UIImageViewWithWords_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-UIImageViewWithWords_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UIImageViewWithWords_Example/Pods-UIImageViewWithWords_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_UIImageViewWithWords_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41BBD6963544BDB9BA2D99AE5CF00A79 /* Build configuration list for PBXNativeTarget "UIImageViewWithWords" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97AFCF0FF45BF1A8C4DBFC97D8BBEB89 /* Debug */,
+				460A5F1868056285A7D726AB01ADD1A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E1A6956AC2FA10B0480F6290EF64B9E /* Build configuration list for PBXNativeTarget "Pods-UIImageViewWithWords_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				636C9ED02450940093BC57AFFD1A8AB5 /* Debug */,
+				AE00A8126E3AC2392834CD440330537A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89B073B55C46C8E4F7429788B50AC2C0 /* Build configuration list for PBXNativeTarget "UIImageViewWithWords-UIImageViewWithWords" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A7AB94E801074475CF6BF3E994F83D6 /* Debug */,
+				2B753E757850C36F6301F7B0F3DDFFEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF1D9C87E71BAE35F8FC51D6F3B4544E /* Build configuration list for PBXNativeTarget "Pods-UIImageViewWithWords_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				273D2187F6471CEC7A627121BD904F29 /* Debug */,
+				628C6185AFA175E4320AB9AFEC6EB8E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

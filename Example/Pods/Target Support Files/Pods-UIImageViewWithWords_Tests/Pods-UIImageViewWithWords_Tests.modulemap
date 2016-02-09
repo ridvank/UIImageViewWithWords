@@ -1,0 +1,6 @@
+framework module Pods_UIImageViewWithWords_Tests {
+  umbrella header "Pods-UIImageViewWithWords_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

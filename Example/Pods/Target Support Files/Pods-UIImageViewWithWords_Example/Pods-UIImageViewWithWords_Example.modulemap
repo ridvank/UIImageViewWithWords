@@ -1,0 +1,6 @@
+framework module Pods_UIImageViewWithWords_Example {
+  umbrella header "Pods-UIImageViewWithWords_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
