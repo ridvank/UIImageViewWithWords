@@ -13,6 +13,13 @@ This library has a very basic usage at all. I supposed that you have already cre
 imageView.imageWithString(word: "Ridvan Kucuk", color: nil, circular: true)
 ```
 
+##Screenshots
+
+<p align="center" imgContainer = "left">
+  <img src ="https://raw.githubusercontent.com/ridvank/UIImageViewWithWords/master/Example/UIImageViewWithWords/ScreenShot1.png" width="30%" height="30%"/>
+  <img src ="https://raw.githubusercontent.com/ridvank/UIImageViewWithWords/master/Example/UIImageViewWithWords/ScreenShot2.png" width="30%" height="30%"/>
+</p>
+
 ## Requirements
 
 ## Manual Installation
