@@ -21,6 +21,24 @@ private extension String {
 
 public extension UIImageView {
     
+    func imageWithString(word word: String) {
+        
+        self.imageWithString(word: word, color: nil, circular: true)
+        
+    }
+    
+    func imageWithString(word word: String, color: UIColor?) {
+        
+        self.imageWithString(word: word, color: color, circular: true)
+        
+    }
+    
+    func imageWithString(word word: String, circular: Bool) {
+        
+        self.imageWithString(word: word, color: nil, circular: circular)
+        
+    }
+    
     func imageWithString(word word: String, color: UIColor?, circular: Bool){
         
         var imageViewString: String = ""
@@ -44,7 +62,7 @@ public extension UIImageView {
             NSForegroundColorAttributeName : UIColor.whiteColor(),
             NSFontAttributeName : UIFont.systemFontOfSize(CGRectGetWidth(self.bounds) * 0.4)
         ]
-
+        
         var imageBackgroundColor = UIColor()
         
         if let color = color {
