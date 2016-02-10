@@ -7,7 +7,7 @@
 
 ## Usage
 
-This library has a very basic usage at all. I supposed that you have already created an UIImageView. After that with one line code you are going to have a word imageView.
+This library has a very basic usage at all. I supposed that you have already created an UIImageView. After that with one line code you are going to have a word imageView. This component is totaly written with Swift.
 
 ```swift
 imageView.imageWithString(word: "Ridvan Kucuk", color: nil, circular: true)
