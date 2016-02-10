@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06141FCE1C6B1EE1005BCBED /* ScreenShot1.png in Resources */ = {isa = PBXBuildFile; fileRef = 06141FCC1C6B1EE1005BCBED /* ScreenShot1.png */; };
+		06141FCF1C6B1EE1005BCBED /* ScreenShot2.png in Resources */ = {isa = PBXBuildFile; fileRef = 06141FCD1C6B1EE1005BCBED /* ScreenShot2.png */; };
 		1AC5FB07699B1C952569BBF3 /* Pods_UIImageViewWithWords_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C8246367B883FDAC9072CC /* Pods_UIImageViewWithWords_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		04D200556A8471392A1679CA /* Pods_UIImageViewWithWords_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIImageViewWithWords_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06141FCC1C6B1EE1005BCBED /* ScreenShot1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScreenShot1.png; sourceTree = "<group>"; };
+		06141FCD1C6B1EE1005BCBED /* ScreenShot2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScreenShot2.png; sourceTree = "<group>"; };
 		0C7F1D5DBC0B04A0219C81B1 /* Pods-UIImageViewWithWords_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIImageViewWithWords_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIImageViewWithWords_Example/Pods-UIImageViewWithWords_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2C2DEFCE1BB611158E6D2C4A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5D21346DADFACB9317D61460 /* Pods-UIImageViewWithWords_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIImageViewWithWords_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIImageViewWithWords_Tests/Pods-UIImageViewWithWords_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +73,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06141FD01C6B1EE9005BCBED /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				06141FCC1C6B1EE1005BCBED /* ScreenShot1.png */,
+				06141FCD1C6B1EE1005BCBED /* ScreenShot2.png */,
+			);
+			name = Screenshots;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +111,7 @@
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				06141FD01C6B1EE9005BCBED /* Screenshots */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for UIImageViewWithWords";
@@ -246,7 +260,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06141FCF1C6B1EE1005BCBED /* ScreenShot2.png in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				06141FCE1C6B1EE1005BCBED /* ScreenShot1.png in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);

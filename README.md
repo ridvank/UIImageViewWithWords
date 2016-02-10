@@ -7,11 +7,19 @@
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+This library has a very basic usage at all. I supposed that you have already created an UIImageView. After that with one line code you are going to have a word imageView.
+
+```swift
+imageView.imageWithString(word: "Ridvan Kucuk", color: nil, circular: true)
+```
 
 ## Requirements
 
-## Installation
+## Manual Installation
+
+You can just drag and drop UIImageView+Words.swift file into your project.
+
+## Cocoapods Installation
 
 UIImageViewWithWords is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -22,7 +30,7 @@ pod "UIImageViewWithWords"
 
 ## Author
 
-Ridvan Kucuk, ridvan.kucuk@icterra.com
+Ridvan Kucuk, ridvankuccuk@gmail.com
 
 ## License
 

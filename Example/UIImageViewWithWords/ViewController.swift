@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.imageVieww.imageWithString(word: "", color: nil, circular: true)
+        self.imageVieww.imageWithString(word: "Ridvan Kucuk", color: nil, circular: true)
     }
 
     override func didReceiveMemoryWarning() {
