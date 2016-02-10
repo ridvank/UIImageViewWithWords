@@ -26,7 +26,7 @@ imageView.imageWithString(word: "Ridvan Kucuk", color: nil, circular: true)
 
 You can just drag and drop UIImageView+Words.swift file into your project.
 
-## Cocoapods Installation
+## CocoaPods Installation
 
 UIImageViewWithWords is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
