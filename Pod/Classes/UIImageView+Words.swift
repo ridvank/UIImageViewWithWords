@@ -40,7 +40,10 @@ public extension UIImageView {
     }
     
     func imageWithString(word word: String, color: UIColor?, circular: Bool){
-        
+        self.imageWithString(word: word, color: color, circular: circular, fontAttributes: nil)
+    }
+    
+    func imageWithString(word word: String, color: UIColor?, circular: Bool, fontAttributes: [String : AnyObject]?){
         var imageViewString: String = ""
         
         let wordsArray = word.characters.split{$0 == " "}.map(String.init)
@@ -52,16 +55,22 @@ public extension UIImageView {
             }
         }
         
-        imageSnapShotFromWords(snapShotString: imageViewString, color: color, circular: circular)
-        
+        imageSnapShotFromWords(snapShotString: imageViewString, color: color, circular: circular, fontAttributes: fontAttributes)
     }
     
-    func imageSnapShotFromWords(snapShotString snapShotString: String, color: UIColor?, circular: Bool) {
+    func imageSnapShotFromWords(snapShotString snapShotString: String, color: UIColor?, circular: Bool, fontAttributes: [String : AnyObject]?) {
         
-        let fontAttributes = [
-            NSForegroundColorAttributeName : UIColor.whiteColor(),
-            NSFontAttributeName : UIFont.systemFontOfSize(CGRectGetWidth(self.bounds) * 0.4)
-        ]
+        var attributes: [String : AnyObject]?
+        
+        if let attr = fontAttributes {
+            attributes = attr
+        }
+        else {
+            attributes = [
+                NSForegroundColorAttributeName : UIColor.whiteColor(),
+                NSFontAttributeName : UIFont.systemFontOfSize(CGRectGetWidth(self.bounds) * 0.4)
+            ]
+        }
         
         var imageBackgroundColor = UIColor()
         
@@ -88,12 +97,12 @@ public extension UIImageView {
         CGContextSetFillColorWithColor(context, imageBackgroundColor.CGColor)
         CGContextFillRect(context, CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height))
         
-        let textSize = (snapShotString as NSString).sizeWithAttributes(fontAttributes)
+        let textSize = (snapShotString as NSString).sizeWithAttributes(attributes)
         
         (snapShotString as NSString).drawInRect(CGRectMake(bounds.size.width/2 - textSize.width/2,
             bounds.size.height/2 - textSize.height/2,
             textSize.width,
-            textSize.height), withAttributes: fontAttributes)
+            textSize.height), withAttributes: attributes)
         
         let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

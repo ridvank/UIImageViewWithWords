@@ -14,7 +14,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.imageVieww.imageWithString(word: "Ridvan Kucuk", color: nil, circular: true)
+        
+        let fontAttributes = [NSForegroundColorAttributeName : UIColor.blueColor(),
+                              NSFontAttributeName : UIFont.systemFontOfSize(40)
+                              ]
+        self.imageVieww.imageWithString(word: "Ridvan Kucuk", color: UIColor.orangeColor(), circular: true, fontAttributes: fontAttributes)
     }
 
     override func didReceiveMemoryWarning() {
