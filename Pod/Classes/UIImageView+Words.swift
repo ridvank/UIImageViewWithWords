@@ -20,103 +20,79 @@ private extension String {
 }
 
 public extension UIImageView {
+  
+  func imageWithString(word word: String, color: UIColor? = nil, circular: Bool = true, fontAttributes: [String : AnyObject] = [:]){
+    var imageViewString: String = ""
     
-    func imageWithString(word word: String) {
-        
-        self.imageWithString(word: word, color: nil, circular: true)
-        
+    let wordsArray = word.characters.split{$0 == " "}.map(String.init)
+    
+    for word in wordsArray {
+      imageViewString += word[0]
+      if imageViewString.characters.count >= 2 {
+        break
+      }
     }
     
-    func imageWithString(word word: String, color: UIColor?) {
-        
-        self.imageWithString(word: word, color: color, circular: true)
-        
+    imageSnapShotFromWords(snapShotString: imageViewString, color: color, circular: circular, fontAttributes: fontAttributes)
+  }
+  
+  func imageSnapShotFromWords(snapShotString snapShotString: String, color: UIColor?, circular: Bool, fontAttributes: [String : AnyObject]?) {
+    
+    let attributes: [String : AnyObject]
+    
+    if let attr = fontAttributes {
+      attributes = attr
+    }
+    else {
+      attributes = [
+        NSForegroundColorAttributeName : UIColor.whiteColor(),
+        NSFontAttributeName : UIFont.systemFontOfSize(CGRectGetWidth(self.bounds) * 0.4)
+      ]
     }
     
-    func imageWithString(word word: String, circular: Bool) {
-        
-        self.imageWithString(word: word, color: nil, circular: circular)
-        
+    let imageBackgroundColor: UIColor
+    
+    if let color = color {
+      imageBackgroundColor = color
+    }
+    else {
+      imageBackgroundColor = generateRandomColor()
     }
     
-    func imageWithString(word word: String, color: UIColor?, circular: Bool){
-        self.imageWithString(word: word, color: color, circular: circular, fontAttributes: nil)
+    let scale = UIScreen.mainScreen().scale
+    
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, false, scale)
+    
+    let context = UIGraphicsGetCurrentContext()
+    
+    if circular {
+      self.layer.cornerRadius = self.frame.width/2
+      self.clipsToBounds = true
     }
     
-    func imageWithString(word word: String, color: UIColor?, circular: Bool, fontAttributes: [String : AnyObject]?){
-        var imageViewString: String = ""
-        
-        let wordsArray = word.characters.split{$0 == " "}.map(String.init)
-        
-        for word in wordsArray {
-            imageViewString += word[0]
-            if(imageViewString.characters.count >= 2){
-                break
-            }
-        }
-        
-        imageSnapShotFromWords(snapShotString: imageViewString, color: color, circular: circular, fontAttributes: fontAttributes)
-    }
+    CGContextSetFillColorWithColor(context, imageBackgroundColor.CGColor)
+    CGContextFillRect(context, CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
     
-    func imageSnapShotFromWords(snapShotString snapShotString: String, color: UIColor?, circular: Bool, fontAttributes: [String : AnyObject]?) {
-        
-        var attributes: [String : AnyObject]?
-        
-        if let attr = fontAttributes {
-            attributes = attr
-        }
-        else {
-            attributes = [
-                NSForegroundColorAttributeName : UIColor.whiteColor(),
-                NSFontAttributeName : UIFont.systemFontOfSize(CGRectGetWidth(self.bounds) * 0.4)
-            ]
-        }
-        
-        var imageBackgroundColor = UIColor()
-        
-        if let color = color {
-            imageBackgroundColor = color
-        }
-        else {
-            imageBackgroundColor = generateRandomColor()
-        }
-        
-        let scale: CGFloat = UIScreen.mainScreen().scale
-        
-        UIGraphicsBeginImageContextWithOptions(self.bounds.size, false, scale)
-        
-        let context = UIGraphicsGetCurrentContext()
-        
-        if(circular){
-            
-            self.layer.cornerRadius = self.frame.width/2
-            self.clipsToBounds = true
-            
-        }
-        
-        CGContextSetFillColorWithColor(context, imageBackgroundColor.CGColor)
-        CGContextFillRect(context, CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height))
-        
-        let textSize = (snapShotString as NSString).sizeWithAttributes(attributes)
-        
-        (snapShotString as NSString).drawInRect(CGRectMake(bounds.size.width/2 - textSize.width/2,
-            bounds.size.height/2 - textSize.height/2,
-            textSize.width,
-            textSize.height), withAttributes: attributes)
-        
-        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
-        self.image = image
-    }
+    let textSize = (snapShotString as NSString).sizeWithAttributes(attributes)
     
+    (snapShotString as NSString).drawInRect(CGRect(x: bounds.size.width/2 - textSize.width/2,
+      y: bounds.size.height/2 - textSize.height/2,
+      width: textSize.width,
+      height: textSize.height), withAttributes: attributes)
     
-    func generateRandomColor() -> UIColor {
-        
-        let hue : CGFloat = CGFloat(arc4random() % 256) / 256
-        let saturation : CGFloat = CGFloat(arc4random() % 128) / 256 + 0.5
-        let brightness : CGFloat = CGFloat(arc4random() % 128) / 256 + 0.5
-        
-        return UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: 1)
-    }
+    let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()
+    UIGraphicsEndImageContext()
+    
+    self.image = image
+  }
+  
+  
+  func generateRandomColor() -> UIColor {
+    
+    let hue = CGFloat(arc4random() % 256) / 256
+    let saturation = CGFloat(arc4random() % 128) / 256 + 0.5
+    let brightness = CGFloat(arc4random() % 128) / 256 + 0.5
+    
+    return UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: 1)
+  }
 }
