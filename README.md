@@ -33,6 +33,14 @@ or if you want to set all preferences as you like you can use this:
 imageView.imageWithString(word: "Ridvan Kucuk", color: nil, circular: true)
 ```
 
+or if you want to add attributes to text, you can set attributes like this:
+```swift
+let fontAttributes = [NSForegroundColorAttributeName : UIColor.blueColor(),
+NSFontAttributeName : UIFont.systemFontOfSize(40)
+]
+self.imageView.imageWithString(word: "Ridvan Kucuk", color: UIColor.orangeColor(), circular: true, fontAttributes: fontAttributes)
+```
+
 ##Screenshots
 
 <p align="center" imgContainer = "left">
