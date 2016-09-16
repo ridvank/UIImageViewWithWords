@@ -5,7 +5,7 @@ import UIKit
 private extension String {
     
     subscript (i: Int) -> Character {
-        return self[self.startIndex.advancedBy(i)]
+        return self[self.characters.index(self.startIndex, offsetBy: i)]
     }
     
     subscript (i: Int) -> String {
@@ -13,15 +13,15 @@ private extension String {
     }
     
     subscript (r: Range<Int>) -> String {
-        let start = startIndex.advancedBy(r.startIndex)
-        let end = start.advancedBy(r.endIndex - r.startIndex)
+        let start = characters.index(startIndex, offsetBy: r.lowerBound)
+        let end = characters.index(start, offsetBy: r.upperBound - r.lowerBound)
         return self[start..<end]
     }
 }
 
 public extension UIImageView {
   
-  func imageWithString(word word: String, color: UIColor? = nil, circular: Bool = true, fontAttributes: [String : AnyObject] = [:]){
+  func imageWithString(word: String, color: UIColor? = nil, circular: Bool = true, fontAttributes: [String : AnyObject] = [:]){
     var imageViewString: String = ""
     
     let wordsArray = word.characters.split{$0 == " "}.map(String.init)
@@ -36,7 +36,7 @@ public extension UIImageView {
     imageSnapShotFromWords(snapShotString: imageViewString, color: color, circular: circular, fontAttributes: fontAttributes)
   }
   
-  func imageSnapShotFromWords(snapShotString snapShotString: String, color: UIColor?, circular: Bool, fontAttributes: [String : AnyObject]?) {
+  func imageSnapShotFromWords(snapShotString: String, color: UIColor?, circular: Bool, fontAttributes: [String : AnyObject]?) {
     
     let attributes: [String : AnyObject]
     
@@ -45,8 +45,8 @@ public extension UIImageView {
     }
     else {
       attributes = [
-        NSForegroundColorAttributeName : UIColor.whiteColor(),
-        NSFontAttributeName : UIFont.systemFontOfSize(CGRectGetWidth(self.bounds) * 0.4)
+        NSForegroundColorAttributeName : UIColor.white,
+        NSFontAttributeName : UIFont.systemFont(ofSize: self.bounds.width * 0.4)
       ]
     }
     
@@ -59,7 +59,7 @@ public extension UIImageView {
       imageBackgroundColor = generateRandomColor()
     }
     
-    let scale = UIScreen.mainScreen().scale
+    let scale = UIScreen.main.scale
     
     UIGraphicsBeginImageContextWithOptions(self.bounds.size, false, scale)
     
@@ -70,17 +70,17 @@ public extension UIImageView {
       self.clipsToBounds = true
     }
     
-    CGContextSetFillColorWithColor(context, imageBackgroundColor.CGColor)
-    CGContextFillRect(context, CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
+    context?.setFillColor(imageBackgroundColor.cgColor)
+    context?.fill(CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
     
-    let textSize = (snapShotString as NSString).sizeWithAttributes(attributes)
+    let textSize = (snapShotString as NSString).size(attributes: attributes)
     
-    (snapShotString as NSString).drawInRect(CGRect(x: bounds.size.width/2 - textSize.width/2,
+    (snapShotString as NSString).draw(in: CGRect(x: bounds.size.width/2 - textSize.width/2,
       y: bounds.size.height/2 - textSize.height/2,
       width: textSize.width,
       height: textSize.height), withAttributes: attributes)
     
-    let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()
+    let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
     UIGraphicsEndImageContext()
     
     self.image = image
