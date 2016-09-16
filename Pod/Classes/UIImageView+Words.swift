@@ -70,8 +70,8 @@ public extension UIImageView {
       self.clipsToBounds = true
     }
     
-    CGContextSetFillColorWithColor(context, imageBackgroundColor.CGColor)
-    CGContextFillRect(context, CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
+    CGContextSetFillColorWithColor(context!, imageBackgroundColor.CGColor)
+    CGContextFillRect(context!, CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
     
     let textSize = (snapShotString as NSString).sizeWithAttributes(attributes)
     
@@ -80,7 +80,7 @@ public extension UIImageView {
       width: textSize.width,
       height: textSize.height), withAttributes: attributes)
     
-    let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()
+    let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
     UIGraphicsEndImageContext()
     
     self.image = image
