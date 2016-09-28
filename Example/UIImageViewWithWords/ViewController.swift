@@ -15,12 +15,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let fontAttributes = [NSForegroundColorAttributeName : UIColor.blueColor(),
-                              NSFontAttributeName : UIFont.systemFontOfSize(40)
+        let fontAttributes = [NSForegroundColorAttributeName : UIColor.blue,
+                              NSFontAttributeName : UIFont.systemFont(ofSize: 40)
                               ]
-        self.imageVieww.imageWithString(word: "Ridvan Kucuk", color: UIColor.orangeColor(), circular: true, fontAttributes: fontAttributes)
+        self.imageVieww.imageWithString(word: "Ridvan Kucuk", color: UIColor.orange, circular: true, fontAttributes: fontAttributes)
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
