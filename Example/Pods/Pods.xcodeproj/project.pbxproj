@@ -516,7 +516,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-UIImageViewWithWords_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-UIImageViewWithWords_Tests/Pods-UIImageViewWithWords_Tests.modulemap";
@@ -541,6 +541,7 @@
 			baseConfigurationReference = DEEC3B487AB4FFA662DA95D3471FE23D /* UIImageViewWithWords.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = UIImageViewWithWords;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -553,6 +554,7 @@
 			baseConfigurationReference = DEEC3B487AB4FFA662DA95D3471FE23D /* UIImageViewWithWords.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = UIImageViewWithWords;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -574,7 +576,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/UIImageViewWithWords/UIImageViewWithWords-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/UIImageViewWithWords/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/UIImageViewWithWords/UIImageViewWithWords.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -647,7 +649,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-UIImageViewWithWords_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-UIImageViewWithWords_Tests/Pods-UIImageViewWithWords_Tests.modulemap";
@@ -680,7 +682,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-UIImageViewWithWords_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-UIImageViewWithWords_Example/Pods-UIImageViewWithWords_Example.modulemap";
@@ -714,7 +716,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/UIImageViewWithWords/UIImageViewWithWords-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/UIImageViewWithWords/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/UIImageViewWithWords/UIImageViewWithWords.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -744,7 +746,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-UIImageViewWithWords_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-UIImageViewWithWords_Example/Pods-UIImageViewWithWords_Example.modulemap";
