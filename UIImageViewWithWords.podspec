@@ -16,8 +16,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'UIImageViewWithWords' => ['Pod/Assets/*.png']
-  }
 
 end
