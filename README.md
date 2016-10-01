@@ -33,7 +33,14 @@ or if you want to set all preferences as you like you can use this:
 imageView.imageWithString(word: "Ridvan Kucuk", color: nil, circular: true)
 ```
 
-or if you want to add attributes to text, you can set attributes like this:
+or if you want to add attributes to text, you can set attributes like this for Swift 3.x:
+```swift
+let fontAttributes = [NSForegroundColorAttributeName : UIColor.blue,
+                                 NSFontAttributeName : UIFont.systemFont(ofSize: 40)]
+self.imageVieww.imageWithString(word: "Ridvan Kucuk", color: UIColor.orange, circular: true, fontAttributes: fontAttributes)
+```     
+
+For Swift 2.x:
 ```swift
 let fontAttributes = [NSForegroundColorAttributeName : UIColor.blueColor(),
 NSFontAttributeName : UIFont.systemFontOfSize(40)
@@ -59,8 +66,13 @@ You can just drag and drop UIImageView+Words.swift file into your project.
 UIImageViewWithWords is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
+For Swift 3.x:
 ```ruby
 pod "UIImageViewWithWords"
+```
+For Swift 2.x:
+```ruby
+pod "UIImageViewWithWords", '~> 0.2.0'
 ```
 
 ## Author
