@@ -70,11 +70,15 @@ For Swift 3.x:
 ```ruby
 pod "UIImageViewWithWords"
 ```
-For Swift 2.x:
+For Swift 2.3:
 ```ruby
-pod "UIImageViewWithWords", '~> 0.2.0'
+pod "UIImageViewWithWords", '~> 0.2.2'
 ```
 
+For Swift 2.2:
+```ruby
+pod "UIImageViewWithWords", '~> 0.2.1'
+```
 ## Author
 
 Ridvan Kucuk, ridvankuccuk@gmail.com
