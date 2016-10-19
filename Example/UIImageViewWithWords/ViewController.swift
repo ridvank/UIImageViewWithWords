@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         let fontAttributes = [NSForegroundColorAttributeName : UIColor.blue,
                               NSFontAttributeName : UIFont.systemFont(ofSize: 40)
                               ]
-        self.imageVieww.imageWithString(word: "Ridvan Kucuk", color: UIColor.orange, circular: true, fontAttributes: fontAttributes)
+        self.imageVieww.image(with: "Ridvan Kucuk", color: UIColor.orange, circular: true, fontAttributes: fontAttributes)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

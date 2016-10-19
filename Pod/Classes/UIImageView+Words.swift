@@ -21,7 +21,7 @@ private extension String {
 
 public extension UIImageView {
     
-    func imageWithString(word: String, color: UIColor? = nil, circular: Bool = true, fontAttributes: [String : AnyObject] = [:]){
+    public func image(with word: String, color: UIColor? = nil, circular: Bool = true, fontAttributes: [String : AnyObject] = [:]){
         var imageViewString: String = ""
         
         let wordsArray = word.characters.split{$0 == " "}.map(String.init)
@@ -36,7 +36,7 @@ public extension UIImageView {
         imageSnapShotFromWords(snapShotString: imageViewString, color: color, circular: circular, fontAttributes: fontAttributes)
     }
     
-    func imageSnapShotFromWords(snapShotString: String, color: UIColor?, circular: Bool, fontAttributes: [String : AnyObject]?) {
+    fileprivate func imageSnapShotFromWords(snapShotString: String, color: UIColor?, circular: Bool, fontAttributes: [String : AnyObject]?) {
         
         let attributes: [String : AnyObject]
         
@@ -63,19 +63,19 @@ public extension UIImageView {
         
         UIGraphicsBeginImageContextWithOptions(self.bounds.size, false, scale)
         
-        let context = UIGraphicsGetCurrentContext()
+        let context = UIGraphicsGetCurrentContext()!
         
         if circular {
             self.layer.cornerRadius = self.frame.width/2
             self.clipsToBounds = true
         }
         
-        context!.setFillColor(imageBackgroundColor.cgColor)
-        context!.fill(CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
+        context.setFillColor(imageBackgroundColor.cgColor)
+        context.fill(CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
         
-        let textSize = (snapShotString as NSString).size(attributes: attributes)
+        let textSize = snapShotString.size(attributes: attributes)
         
-        (snapShotString as NSString).draw(in: CGRect(x: bounds.size.width/2 - textSize.width/2,
+        snapShotString.draw(in: CGRect(x: bounds.size.width/2 - textSize.width/2,
                                                        y: bounds.size.height/2 - textSize.height/2,
                                                        width: textSize.width,
                                                        height: textSize.height), withAttributes: attributes)
@@ -87,7 +87,7 @@ public extension UIImageView {
     }
     
     
-    func generateRandomColor() -> UIColor {
+    fileprivate func generateRandomColor() -> UIColor {
         
         let hue = CGFloat(arc4random() % 256) / 256
         let saturation = CGFloat(arc4random() % 128) / 256 + 0.5
