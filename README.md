@@ -45,24 +45,6 @@ This will add an image with initials to your UIImageView object with random back
 imageView.image(with: "Ridvan Kucuk")
 ```
 
-or you can set your preffered color (circular shaped by default)
-
-```swift
-imageView.image(with: "Ridvan Kucuk", color: UIColor.blueColor())
-```
-
-or if you don't want it to be circular, you can just use it with circular to false
-
-```swift
-imageView.image(with: "Ridvan Kucuk", circular: false)
-```
-
-or if you want to set background color as you like you can use it like that
-
-```swift
-imageView.image(with: "Ridvan Kucuk", color: nil, circular: true)
-```
-
 or if you want to add attributes to text, you can set attributes like this for Swift 3.x:
 ```swift
 let fontAttributes = [NSForegroundColorAttributeName : UIColor.blue,
