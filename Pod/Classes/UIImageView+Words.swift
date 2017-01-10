@@ -40,7 +40,7 @@ public extension UIImageView {
         
         let attributes: [String : AnyObject]
         
-        if let attr = fontAttributes {
+        if let attr = fontAttributes, attr.keys.count > 0 {
             attributes = attr
         }
         else {

@@ -10,7 +10,7 @@ import UIKit
 import UIImageViewWithWords
 class ViewController: UIViewController {
 
-    @IBOutlet weak var imageVieww: UIImageView!
+    @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -18,7 +18,8 @@ class ViewController: UIViewController {
         let fontAttributes = [NSForegroundColorAttributeName : UIColor.blue,
                               NSFontAttributeName : UIFont.systemFont(ofSize: 40)
                               ]
-        self.imageVieww.image(with: "Ridvan Kucuk", color: UIColor.orange, circular: true, fontAttributes: fontAttributes)
+        imageView.image(with: "Lorem Ipsum", color: .red, circular: true, fontAttributes: fontAttributes)
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
